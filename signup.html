@@ -1,0 +1,79 @@
+<html>
+<head><title>VEDIC</title>
+<style>
+.centerdiv {
+      position : absolute;
+	  top: 150px;
+      height : 500px;
+      left : 320px;
+	  right : 320px;
+      background-color : #ffffff;
+	  }
+	  
+#mailidtextbox {
+    width : 300px;
+	height : 30px;
+
+}
+
+#password {
+ width : 300px;
+ height : 30px;
+}
+
+#confirm_password {
+ width : 250px;
+ height : 30px;
+}
+
+#loginbutton{
+  background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}	  
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+
+function checkPasswordMatch() {
+    var password = $("#password").val();
+    var confirmPassword = $("#confirm_password").val();
+
+    if (password != confirmPassword)
+        $("#divCheckPasswordMatch").html("Passwords do not match!");
+    else
+        $("#divCheckPasswordMatch").html("Passwords match.");
+}
+
+$(document).ready(function () {
+   $("#confirm_password").keyup(checkPasswordMatch);
+});
+</script>
+</head>
+<body bgcolor  = "#4CAF50">
+<h1 align = "center">VEDIC</h1>
+<h3 align = "center">Vishnu Educational Development and Innovation Center</h3>
+<div class = "centerdiv">
+    <h1 align = "center" style = "color : #4CAF50">SIGN UP</h1>
+	<div align = "center">
+	<form action = "signup.php" method = "POST">
+	Mail id  &nbsp&nbsp&nbsp : <input type = "text" name = "mailid" id = "mailidtextbox" placeholder = "example@domain.com"><br><br>
+    Password : <input type = "password" name = "pswd" placeholder = "password" id = "password"><br><br>
+	Confirm Password : <input type = "password" name = "cpswd" placeholder = "password" id ="confirm_password">
+	 <div class="registrationFormAlert" id="divCheckPasswordMatch">
+</div><br><br>
+
+	<button type = "submit" name = "sub"  id = "loginbutton">LOGIN</button><br>
+	</form>
+     </div>
+</div>
+
+</body>
+<html>
