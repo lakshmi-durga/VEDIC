@@ -1,0 +1,1 @@
+create table thinkingstyles(username varchar(100),studentid varchar(100),questionnum int,result1 char,resut2 char,workshopid varchar(10),date date);

@@ -1,0 +1,27 @@
+var b_txt = '';
+
+// write the badge
+	
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image1"><a href="http://www.flickr.com/photos/governoromalley/8186626090/"><img src="http://farm9.staticflickr.com/8202/8186626090_8398f4f830_s.jpg" alt="A photo on Flickr" title="JLB_6440" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image2"><a href="http://www.flickr.com/photos/governoromalley/8186627116/"><img src="http://farm9.staticflickr.com/8340/8186627116_f4088a5754_s.jpg" alt="A photo on Flickr" title="JLB_6434" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image3"><a href="http://www.flickr.com/photos/governoromalley/8186628936/"><img src="http://farm9.staticflickr.com/8487/8186628936_35ffe17b2e_s.jpg" alt="A photo on Flickr" title="JLB_6433" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image4"><a href="http://www.flickr.com/photos/governoromalley/8186630790/"><img src="http://farm9.staticflickr.com/8350/8186630790_3105f39f24_s.jpg" alt="A photo on Flickr" title="JLB_6430" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image5"><a href="http://www.flickr.com/photos/governoromalley/8186632122/"><img src="http://farm9.staticflickr.com/8057/8186632122_a27b4af0a4_s.jpg" alt="A photo on Flickr" title="JLB_6429" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image6"><a href="http://www.flickr.com/photos/governoromalley/8186634118/"><img src="http://farm9.staticflickr.com/8478/8186634118_4e2329ecbe_s.jpg" alt="A photo on Flickr" title="JLB_6426" height="75" width="75"></a></div>';
+
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="http://geo.yahoo.com/p?s=792600102&t=883a0fe53496913761fdedb127fd0189&r=http%3A%2F%2Fthemes.quitenicestuff.com%2Fparkcollegewp%2F&fl_ev=0&lang=en&intl=in" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);
